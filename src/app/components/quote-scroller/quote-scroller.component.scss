@@ -1,0 +1,14 @@
+.scroll-container {
+  height: 400px;
+  margin: 0 10%;
+  border: 1px solid coral;
+  border-radius: 2px;
+
+  .quote {
+    &li {
+      list-style: none;
+    }
+    
+    height: 80px;
+  }
+}

@@ -1,0 +1,5 @@
+<cdk-virtual-scroll-viewport class="scroll-container" itemSize="60">
+  <li class="quote" *cdkVirtualFor="let quote of dataSource">
+    {{ quote.author }} - {{ quote.title }}
+  </li>
+</cdk-virtual-scroll-viewport>
