@@ -20,11 +20,11 @@ export class QuotesService {
       .pipe(map((response) => this.mapToQuote(response.quote)));
   }
 
-  mapToQuote(response: QuoteDto): Quote {
+  private mapToQuote(response: QuoteDto): Quote {
     return {
       id: response._id,
       author: response.quoteAuthor,
-      title: response.quoteText,
+      text: response.quoteText,
     };
   }
 }

@@ -25,9 +25,6 @@ export class QuotesDatasource extends DataSource<Quote> {
       collectionViewer.viewChange.subscribe((range) => {
         const currentPage = this.getPageForIndex(range.end);
 
-        console.log('rangeEnd', range.end);
-        console.log({ currentPage });
-
         if (currentPage > this.lastPage) {
           this.lastPage = currentPage;
           this.fetchQuotesPage();
